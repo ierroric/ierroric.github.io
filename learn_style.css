@@ -5,7 +5,7 @@
 }
 
 .nav-link{
-    color: #222;
+    color: #222; /* 链接字体颜色，这段注释可删*/
     font-family: 'PT serif', Georgia,'Microsoft YaHei',sans-serif;
     text-transform: uppercase;
     text-decoration: none;
@@ -17,41 +17,18 @@
     border-radius: 0 0 4px 4px;
     border: 1px #222 solid;
     transition-property: background-color, color, text-shadow;
+    transition-duration: .3s;
     
 }
 
-/* body{
-    background: black;
-} */
-
-/* .nav-container {
-    text-align: center;
-    border-top: 5px #222 solid;
-}
-
-.nav-link {
-    color: #222;
-    font-family: 'PT Serif', Georgia, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: -1px 9px 0 9px;
-    background: #fff;
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 24px;
-    border-radius: 0 0 4px 4px;
-    border: 1px #222 solid;
-    transition-property: background-color, color, text-shadow;
-    transition-duration: .3s;
-}
-
-.nav-link:visited { color: #222; }
+.nav-link:visited{ color: #222;} /*就是没变*/
 
 .nav-link:hover,
-.nav-link.active {
+.nav-link:active{
     color: #fff;
     background-color: #444;
     text-shadow: 0 -2px #222;
     transition-property: background-color, color, text-shadow;
     transition-duration: .3s;
-} */
+}
+
