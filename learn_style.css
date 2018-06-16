@@ -1,3 +1,44 @@
+a {color: #00e;}
+a:visited { color: #551a8b;}
+a:hover { color: #06e;}
+a:focus {outline: thin dotted;}
+a:hover, a:active {outline: 0;}
+
+
+body{
+    font: 16px/1.4 sans-serif;
+    background-color: #fff;
+
+    background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjYnIGhlaWdodD0nMzMnPgoJPGRlZnM+CgkJPGcgaWQ9J2xpbmVzJz4KCQkJPGxpbmUgeDE9JzAnIHkxPScwJyB4Mj0nMTMuMicgeTI9JzE2LjUnIHN0cm9rZS13aWR0aD0nMScgc3Ryb2tlPScjZjZmNmY2Jy8+CgkJCTxsaW5lIHgxPSc5LjknIHkxPScwJyB4Mj0nMjMuMScgeTI9JzE2LjUnIHN0cm9rZS13aWR0aD0nMScgc3Ryb2tlPScjZmNmY2ZjJy8+CgkJCTxsaW5lIHgxPScxOS44JyB5MT0nMCcgeDI9JzMzJyB5Mj0nMTYuNScgc3Ryb2tlLXdpZHRoPScxJyBzdHJva2U9JyNmOWY5ZjknLz4KCQk8L2c+Cgk8L2RlZnM+Cgk8cmVjdCB4PSctMTAlJyB5PSctMTAlJyB3aWR0aD0nMTIwJScgaGVpZ2h0PScxMjAlJyBmaWxsPScjZmZmZmZmJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNsaW5lcycgeD0nMzMnIHk9JzE2LjUnIC8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNsaW5lcycgeD0nMzMnIHk9Jy0xNi41JyB0cmFuc2Zvcm09J21hdHJpeCgxIDAgMCAtMSAwIDApJy8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNsaW5lcycgIC8+Cgk8dXNlIHhsaW5rOmhyZWY9JyNsaW5lcycgeD0nMCcgeT0nLTMzJyB0cmFuc2Zvcm09J21hdHJpeCgxIDAgMCAtMSAwIDApJy8+ICAKPC9zdmc+');
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'PT Serif', Georgia, 'Microsoft YaHei', serif;
+}
+
+header, footer{
+    font-family: 'PT Serif', Georgia, 'Microsoft YaHei', serif;
+    font-size: 12px;
+    text-align: center;
+    color: #222; 
+}
+
+footer{
+    font-weight: bold;
+    padding: 9px;
+    border-bottom: 5px #222 solid;
+}
+footer h1{ font-size: 40px;line-height: 40px; margin: 0;}
+
+footer a:visited{color:#222;}
+
+footer p {margin: 0;}
+
+/* main section */
+#main{
+    width:680px;
+    margin: 60px auto;
+}
+
 .nav-container{
     text-align: center;
      border-top: 5px #222 solid; 
@@ -32,3 +73,24 @@
     transition-duration: .3s;
 }
 
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'PT Serif', Georgia, 'Microsoft YaHei', serif;
+}
+
+.homepage-title{
+    margin-bottom: 9px;
+}
+
+p.intro{
+    font-family: 'PT Serif', Georgia, 'Microsoft YaHei', serif;
+    margin: -100px;
+    font-size: 24px;
+    margin-bottom: 18px;
+    width: 420px;
+    padding-left: 260px;
+    padding-top: 100px;
+    background: transparent url('dark2.png') bottom left no-repeat ;
+    
+}
