@@ -1,3 +1,32 @@
+/**
+ * CSS based on H5BP, slightly edited.
+ * Credits to the whole H5BP team.
+ * You guys rock <3
+ */
+
+
+/****************************************
+*********** CSS Normalizing *************
+*****************************************
+** CSS normalizing fills the small gaps
+** between browser's default stylesheets.
+** This approach is better than CSS reset
+** since it keeps the default styles.
+****************************************/
+article, aside, details, figcaption, figure, footer,header,hgroup, nav, section {
+    display:block;
+}
+audio, canvas, video {display: inline-block; *display: inline; *zoom: 1;}
+audio:not([controls]){ display: none;}
+[hiden] {display: none;}
+
+html {font-size: 100%; overflow-y:scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body {margin: 0; font-size: 13px; line-height: 1.2;}
+body, button, input, select, textarea {font-family: sans-serif; color: #222;}
+
+/* links superchared */
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow:none;}
+::selection {background: #fe57a1; color: #fff; text-shadow: none;}
 a {color: #00e;}
 a:visited { color: #551a8b;}
 a:hover { color: #06e;}
@@ -44,7 +73,7 @@ footer p {margin: 0;}
 
 .nav-container{
     text-align: center;
-     border-top: 5px #222 solid; 
+    border-top: 5px #222 solid; 
  
 }
 
@@ -88,7 +117,7 @@ footer p {margin: 0;}
 
 p.intro{
     font-family: 'PT Serif', Georgia, 'Microsoft YaHei', serif;
-    margin: -100px;
+    margin-top: -100px;
     font-size: 24px;
     margin-bottom: 18px;
     width: 420px;
@@ -119,6 +148,13 @@ p.social{
 }
 
 .social .github{
-    
+    background: transparent url('social-github.png') top center no-repeat;    
+}
 
+.social .weibo{
+    background: transparent url('social-weibo.jpg') top center no-repeat;    
+}
+
+.social .steam{
+    background: transparent url('social-steam.jpg') top center no-repeat;    
 }
