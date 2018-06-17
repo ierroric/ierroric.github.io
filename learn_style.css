@@ -33,6 +33,14 @@ a:hover { color: #06e;}
 a:focus {outline: thin dotted;}
 a:hover, a:active {outline: 0;}
 
+abbr[title] {border-bottom: 1px dotted;}
+b, strong {font-weight: bold;}
+blockquote {margin: 1em 40px;}
+dfn {font-style: italic;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+ins {background: #ff9; color:#000; text-decoration: none; }
+mark {background: #ff0; color:#000; font-style: italic; font-weight: bold;}
+
 
 body{
     font: 16px/1.4 sans-serif;
@@ -152,9 +160,23 @@ p.social{
 }
 
 .social .weibo{
-    background: transparent url('social-weibo.jpg') top center no-repeat;    
+    background: transparent url('social-weibo.png') top center no-repeat;    
 }
 
 .social .steam{
     background: transparent url('social-steam.jpg') top center no-repeat;    
+}
+
+/* link styles */
+a.content-link,
+a.content-link:visited{
+    color: #222;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+a.content-link:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #444;
 }
