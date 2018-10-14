@@ -26,7 +26,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 /* Links supercharged */
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #79beda; color: #fff; text-shadow: none; }
 a { color: #00e; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; }
@@ -75,7 +75,7 @@ input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-b
 input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
-input:valid, textarea:valid {  }
+
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 table { border-collapse: collapse; border-spacing: 0; }
@@ -94,9 +94,6 @@ td { vertical-align: top; }
 .clearfix { zoom: 1; }
 
 
-/******************
-Let's style baby !
-*******************/
 
 body {
     font: 16px/1.42 sans-serif;
@@ -128,43 +125,7 @@ footer h1 { font-size: 40px; line-height: 40px; margin: 0; }
 footer a:visited { color: #222; }
 footer p { margin: 0; }
 
-/* Main section */
-#main {
-    width:680px;
-    margin:60px auto;
-}
-
-.nav-container {
-    text-align: center;
-    border-top: 5px #222 solid;
-}
-
-.nav-link {
-    color: #222;
-    font-family: 'PT Serif', Georgia, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: -1px 9px 0 9px;
-    background: #fff;
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 24px;
-    border-radius: 0 0 4px 4px;
-    border: 1px #222 solid;
-    transition-property: background-color, color, text-shadow;
-    transition-duration: .3s;
-}
-
-.nav-link:visited { color: #222; }
-
-.nav-link:hover,
-.nav-link.active {
-    color: #fff;
-    background-color: #444;
-    text-shadow: 0 -2px #222;
-    transition-property: background-color, color, text-shadow;
-    transition-duration: .3s;
-}
+/* Now let's style out notes */
 
 .title {
     font-size:40px;
@@ -172,191 +133,11 @@ footer p { margin: 0; }
     font-family: 'PT Serif', Georgia, serif;
 }
 
-.homepage-title {
-    margin-bottom: 9px;
-}
-
-p.intro {
-    font-family: 'PT Serif', Georgia, serif;
-    margin-top: -100px;
-    font-size: 24px;
-    margin-bottom: 18px;
-    width: 420px;
-    padding-left: 260px;
-    padding-top: 100px;
-    background: transparent url('/img/illustration-surf.png') bottom left no-repeat;
-}
-p.social {
-    clear:both;
-    text-align:center;
-    padding: 18px;
-    margin: 0 0 18px 0;
-    border-top:1px #333 solid;
-    border-bottom: 1px #333 solid;
-}
-.social a {
-  display: inline-block;
-  width: 88px;
-  height: 54px;
-  margin: 0 9px;
-}
-.social a span {
-  display:none;
-}
-.social .github {
-  background: transparent url('/img/social-github.png') top center no-repeat;
-}
-.social .linkedin {
-  background: transparent url('/img/social-linkedin.png') top center no-repeat;
-}
-.social .googleplus {
-  background: transparent url('/img/social-googleplus.png') top center no-repeat;
-}
-.social .flickr {
-  background: transparent url('/img/social-flickr.png') top center no-repeat;
-}
-.social .twitter {
-  background: transparent url('/img/social-twitter.png') top center no-repeat;
-}
-.lab-details {
-    position:relative;
-    margin-top: 54px;
-}
-.lab-details h1 {
-    height:34px;
-    margin-bottom: 27px;
-    font-size:14px;
-    line-height:34px;
-    padding-left:1em;
-    color: #fff;
-    background: transparent url('/img/articleH1BG.png') top left no-repeat;
-}
-.lab-details aside {
-    background: transparent url('/img/sectionTopLinkBG.png') top right no-repeat;
-    height:34px;
-    width: 180px;
-    position: absolute;
-    top: 0;
-    right:0;
-}
-
-a.online, a.offline {
-    display:block;
-    font-size: 12px;
-    color:#333;
-    width: 55px;
-    font-weight: bold;
-    text-decoration:none;
-    text-align:center;
-    border-bottom:2px solid #333;
-    border-top:2px solid #333;
-    margin-top:-2px;
-}
-a.online:hover {
-    border-width:4px;
-    margin-top:-4px;
-    color: #333;
-}
-a.online:active {
-    border-color:#000;
-    color: #333;
-}
-a.offline {
-  cursor:default;
-  border: none;
-}
-
-.lab-details .story {
-    width: 300px;
-    padding-left: 40px;
-    margin-bottom: 27px;
-}
-
-.lab-details dl {
-    position:absolute;
-    font-size: 12px;
-    top: 62px;
-    line-height: 18px;
-    left : 400px;
-    width: 230px;
-    padding-left: 10px;
-    border-left: 5px solid #333;
-}
-.lab-details dt { font-weight: bold;}
-
-/* Illustration section : general settings */
-.illustration { width: 640px;  margin: 0 auto; padding: 10px 0; }
-.illustration span, .illustration img { display: block; }
-.illustration img { border: 9px #fff solid;}
-.illustration span { border: 1px #999 solid; }
-
-/* Very very basic grid system to display images */
-.grid, .grid-2 { clear: both; overflow: hidden; margin-bottom: 20px; }
-.cell { float: left; display: inline; margin: 0 10px; position: relative; }
-.grid .cell { width: 620px; }
-.grid-2 .cell { width: 300px; }
-
-.index {
-    text-align: center;
-    padding-left: 0;
-    list-style-type: none;
-}
-
-/* Notes index list */
-.notes-index {
-    font-family: 'PT Serif', Georgia, serif;
-    font-size: 24px;
-    text-align: center;
-    padding-left: 0;
-    list-style-type: none;
-}
-
-/* Link styles */
-a.content-link,
-a.content-link:visited {
-    color: #222;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-a.content-link:hover {
-    text-decoration: none;
-    color: #fff;
-    background: #444;
-}
-
-.notes-list-item em {
-    display: block;
-    font-size: 11px;
-    margin-bottom: 20px;
-}
-
-/* Labs index */
-.labs-list-item {
-    display: inline-block;
-    margin: 10px;
-}
-.labs-list-item a {
-    border: 1px #999 solid;
-    text-align: center;
-    display: inline-block;
-    padding: 10px;
-    background: #FFF;
-    text-decoration: none;
-    color: #222;
-    border-radius: 2px;
-}
-.labs-list-item .caption {
-    font-size: 16px;
-    padding-top: 10px;
-    display: block;
-}
-
-/* Now let's style out notes */
 .note-title {
     margin-bottom: 0px;
     text-align: center;
 }
+
 .note-subtitle {
     font-size: 11px;
     line-height: 5px;
@@ -366,18 +147,20 @@ a.content-link:hover {
     margin: 0;
 }
 .note-subtitle a { color: #222; }
+
 .note-subtitle-content {
     display: inline-block;
     background: #fff;
     padding: 0 11px;
 }
 
-.note-content {
-    font-size: 16px;
+.note-content{
+    font-size: 20px;
+    font-weight: 200;
     margin: 60px auto;
 }
 
-.note-content h1 {
+.note-content h1{
     font-size: 32px;
     border-bottom: 1px solid #222;
 }
@@ -389,13 +172,14 @@ a.content-link:hover {
     border-radius: 2px;
 }
 
-.note-content .syntaxhighlighter {
+.note-content .syntaxhighlighter{
     font-size: 12px !important;
     border-radius: 4px;
     padding: 4px 0;
     margin-left: -10px;
     border: 1px #fff solid;
 }
+
 .note-content .syntaxhighlighter .toolbar { display: none !important; }
 
 /**
@@ -410,27 +194,9 @@ a.content-link:hover {
   font-family: "PT Mono", Menlo, "Consolas", "Courier New", monospace;
 }
 
-blockquote {
-    background: #fff;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    font-style: italic;
-    border: 1px solid #999;
-    border-left: 5px solid #0f192a;
-    border-radius: 2px;
-}
-blockquote p { margin: 5px; }
 
-/* Print styles */
-@media print {
-    body { background: white; }
-    * { color: black !important; }
-    a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-    thead { display: table-header-group; } /* h5bp.com/t */
-    tr, img { page-break-inside: avoid; }
-    img { max-width: 100% !important; }
-    @page { margin: 0.5cm; }
-    p, h2, h3 { orphans: 3; widows: 3; }
-    h2, h3 { page-break-after: avoid; }
+#main{
+    width: 680px;
+    margin: 60px auto;
 }
+

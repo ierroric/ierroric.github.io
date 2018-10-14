@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <!--
+        ***********************************************************************
+        ArnaudBrousseau.com || v5 || Copyright © Arnaud Brousseau 2009-2014
+        ***********************************************************************
+        Are you reading this? You're awesome. You're reading the source.
+
+        Feel free to look around. If you spot something interesting, weird or
+        awesome or outright wrong don't hesitate to contact me. I don't bite.
+        I'm <first-name>.<last-name>@gmail.com.
+
+        Oh and if you're wondering: this site is static, built with DocPad.
+        Check out how: https://github.com/ArnaudBrousseau/arnaudbrousseau.com
+
+        FYI this site was last generated on:
+        Wed Oct 10 2018 11:20:38 GMT-0500 (CDT) (how precise! I know.)
+        ***********************************************************************
+        -->
+        <meta name="description" content="" />
+        <meta name="author" content="Arnaud Brousseau" />
+        <meta name="viewport" content="width=720px">
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+        <title>onChange | Arnaud Brousseau</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="learn_text.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="nav-container">
+                <a href="index.html" class="nav-link " title="Go back home">Home</a>
+                <a href="example_labs.html" class="nav-link " title="Check out what I've been cooking">Labs</a>
+                <a href="example_notes.html" class="nav-link active" title="Check out what I've been writting">Notes</a>
+            </nav>
+        </header>
+
+        <section id="main">
+            <h1 class="title note-title">onChange</h1>
+<p class="note-subtitle">
+    <em class="note-subtitle-content">
+        <time datetime="Sun Feb 11 2018 18:00:00 GMT-0600 (CST)">Sunday, February 11, 2018</time>
+    </em>
+</p>
+
+<div class="note-content">
+    <p>I recently read <a rel="noopener noreferrer" href="https://www.amazon.com/Change-Management-including-featured-Leading/dp/1422158004" title="">&quot;On
+Change&quot;</a>,
+a compilation of Harvard Business Review articles about change. I picked up
+this book on a whim but ended up reading it with software engineering and
+engineers in mind. What follows are some notes that could be useful if you want
+to initiate or lead change in engineering organizations.</p>
+<h2 id="leading-change-why-transformation-efforts-fail">&quot;Leading Change: why transformation efforts fail&quot;</h2>
+<p>There are 8 stages that an organization needs to go through in order for a
+change to become truly durable. Since most projects in engineering are
+fundamentally about change, this is a perfect set of guideline for good
+technical leadership.</p>
+<h3 id="1-establish-a-sense-of-urgency">1. Establish a sense of urgency</h3>
+<p>Change has to be rooted somewhere. In the software world it can be a
+deprecation deadline, some new vulnerability, a shift in the partnership
+landscape, a new feature released by a third-party, or some internal data about
+developer velocity. Whatever it is, change starts by identifying and discussing
+these facts/numbers and shaping them into potential threats or opportunities
+that the business needs to react to.
+A common pitfall at this stage is risk paralysis and underestimation of risk
+associated with a change. Have you ever been involved in an &quot;easy&quot; migration
+effort which lasts forever and never seems to finish?</p>
+<h3 id="2-forming-a-powerful-guiding-coalition">2. Forming a powerful guiding coalition</h3>
+<p>That&#39;s the idea of consensus building that&#39;s often preached by technical
+leadership books and materials, so nothing new under the sun. I find the notion
+of &quot;coalition&quot; a bit more helpful to think about than &quot;consensus&quot; because
+&quot;coalition&quot; implies active help as opposed to passive &quot;yeah sure this is fine&quot;
+agreement.</p>
+<p>It&#39;s really important to get higher-ups aware of the initiative/project. If
+possible, try getting their active support.</p>
+<h3 id="3-creating-a-vision">3. Creating a vision</h3>
+<p>This is typically done with an enhancement proposal, RFC (request for comment),
+a wiki page, slides, etc. Whatever format is used doesn&#39;t matter as long as
+there is a way to communicate what needs to change and how.
+The simpler the better. If the vision is too complicated people will often
+phase out, won&#39;t be on board, or will tend to actively fight the change.
+Technically this means aiming for simplicity (KISS).</p>
+<h3 id="4-communicating-the-vision">4. Communicating the vision</h3>
+<p>That&#39;s the part that most engineers or technical leads who want to drive a
+change most often overlook. If a large change is required, communication around
+it should be loud, clear and consistent. The status should be available for
+everyone to check on, higher ups should be presenting it at engineering
+all-hands, etc.
+Another key aspect of this phase is &quot;dogfooding&quot;. Have the coalition (from step
+2) support the change by going through it themselves (if applicable). A major
+hurdle to change arise when the people driving a change do not implement it
+themselves. They then risk being considered disingenuous or hypocrite.</p>
+<h3 id="5-empowering-others-to-act-on-the-vision">5. Empowering others to act on the vision</h3>
+<p>Make sure that there is an &quot;easy upgrade path&quot; (whether or not the change in
+question is an upgrade), and change or fix systems/processes which make it
+hard for the change to happen. This sometimes involves a bit of brainstorming.
+What can you do to get out of the way and empower other developers to &quot;work for
+you&quot;? The ideal is to get to a situation where going through change is
+easier than not.</p>
+<h3 id="6-planning-for-and-creating-short-term-wins">6. Planning for and creating short-term wins</h3>
+<p>Strategically reach out to potential early adopters. Plan
+short-term wins to demonstrate the value of the change, and actively break down
+blockers to let others go through the change more easily.
+If you don&#39;t plan for these small wins ahead of time you may never find them,
+and building momentum will become more difficult.</p>
+<h3 id="7-consolidating-improvements-and-producing-still-more-change">7. Consolidating improvements and producing still more change</h3>
+<p>This is the refinement step of the previous one. The process to go from nothing
+to alpha, from alpha to beta, from beta to limited availability, from limited
+availability to general availability is the same: reach out, listen, break down
+blockers, modify other systems, fix yours. Rince and repeat.</p>
+<p>It&#39;s very important that you don&#39;t declare victory too soon, otherwise you lose
+momentum and support from your coalition.</p>
+<h3 id="8-institutionalizing-new-approaches">8. Institutionalizing new approaches</h3>
+<p>That&#39;s when the change is truly over. When the new, proposed way becomes the
+One Way ®, and technical/process consistency is achieved. Yes! Celebration
+time.</p>
+<h2 id="leading-change-when-business-is-good">&quot;Leading change when Business is good&quot;</h2>
+<p>Changing is easy when things are going badly. How do you change a system when
+it&#39;s running well? <a rel="noopener noreferrer" href="https://en.wiktionary.org/wiki/if_it_ain%27t_broke,_don%27t_fix_it" title="">&quot;If it ain&#39;t broke, don&#39;t fix
+it!&quot;</a>-- in
+this case, try to focus on the larger picture and see how systems fit together.
+What do we want systems/processes to look like in 2/3/5/10 years? Can we align
+them better?  Focus on tests, release agility, code quality, and architecture
+or infrastructure simplicity.</p>
+<h2 id="radical-change-the-quiet-way">&quot;Radical Change, the quiet way&quot;</h2>
+<p>This focuses on the concept of &quot;tempered radicals&quot;. These are individual &quot;deep&quot;
+(not in high management, essentially) inside companies who take it upon
+themselves to change an aspect of their job. In engineering this happens <em>all
+the time</em>. I found that laying out how this can be done on a spectrum is
+useful. At the edge of this &quot;quiet&quot; radical change begins true public
+leadership. Below are the business-y terms from the article along with concrete
+engineering examples that I&#39;ve seen:</p>
+<ul>
+<li>&quot;Disruptive self-expression&quot;: introduce a new code/test
+pattern/library/component to see how others react, start a communication
+trend (sending RFCs internally, regular private email statuses, some new way
+of organizing your backlog, or even how you communicate testing strategies to
+your peers). This should be common!</li>
+<li>&quot;Verbal jujitsu&quot;: translated to the technical world this refers to soft
+rebellion against the status quo. People who are advocate for clean testing,
+good naming, some particular technology or patter, are examples of this.</li>
+<li>&quot;Variable-term opportunism&quot;: instead of just complaining, these developers
+look for opportunities for change to happen. Example: &quot;oh you&#39;re touching
+this file, how about refactoring this system which sucks right now?&quot;. The
+&quot;scout&quot; rule (&quot;leave a source file always cleaner than you found it&quot;) is
+somewhat related to this as well.</li>
+<li>Alliance building. In the technical community these developers are often
+referred to as &quot;champions&quot;. They want an aspect of their job to change and
+they&#39;re ready to lead the change. There begins technical leadership.</li>
+</ul>
+<p>You&#39;ll note that these methods vary in effectiveness. Small organizations
+benefit a lot from more private change initiators while bigger organizations
+benefit from champions the most. Startups are more likely to say &quot;just do it&quot;,
+whereas bigger structures can be hurt from excessive &quot;disruptive
+self-expression&quot;, which harms effectiveness as a whole because of the lack of
+consistency and predictability that it brings.</p>
+<h2 id="the-real-reason-people-won-t-change">&quot;The real reason people won&#39;t change&quot;</h2>
+<p>This is a way to analyze why people (or you!) are resistant to a change. In
+short, ask these questions, the article says:</p>
+<ul>
+<li>What would you like to see changed at work, so you could be more effective,
+or so work would be more satisfying?</li>
+<li>What commitment does your complaint imply?</li>
+<li>What are you doing, or not doing, to keep your commitment from being more
+fully realized?</li>
+<li>Imagine doing the opposite of the undermining behavior. Do you feel any
+discomfort, worry or vague fear?</li>
+<li>By engaging in this undermining behavior, what worrisome outcome are you
+committed to preventing?</li>
+<li>Identify the Big Assumption: create a sentence stem that inverts the
+competing commitment then fill in the blanks.</li>
+</ul>
+<p>Lots of business-bullshit-type fluff huh? This idea of a &quot;Big Assumption&quot; is
+what we sometimes call &quot;hidden motives&quot;. Hence the importance of identifying
+people that are NOT on board with a proposed change, to address their
+concerns and understand the reason they&#39;re opposing the change. Nothing really
+revelatory here.</p>
+<h2 id="cracking-the-code-of-change">&quot;Cracking the code of change&quot;</h2>
+<p>This talks about &quot;theory E&quot; changes (Economic capability) vs &quot;theory O&quot; changes
+(Organizational capability). It states that you need both to be successful. The
+direct application of this is <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/OKR" title="">OKRs</a>.
+Top-level objectives metrics are the &quot;E&quot;, top-down driven component. Then key
+results and planning are the &quot;O&quot; component, letting engineers be free to
+accomplish what&#39;s set for them however they want.</p>
+<h2 id="the-hard-side-of-change-management">&quot;The Hard side of change management&quot;</h2>
+<p>This is a process to identify which change initiatives are &quot;at risk&quot; of
+failure. Critical components of a change initiatives are:</p>
+<ul>
+<li>Duration (time between meeting/reviews). The shorter the better (the article
+says ideally &lt; 2mo, but in software it should be much more frequent!)</li>
+<li>Integrity: how skilled are people driving the change? Assessment can be by
+looking at how well-established/respected the leader is, and how much time is
+allocated to the change (ideally &gt; 50%, which gives him/her focus and ability
+to drive that change to completion)</li>
+<li>Commitment: buy-in from upper management. Does it appear in quarterly report?
+Does upper management mention this change in email/updates? Do they get why
+this change is important? Do developers? Ideally, all of the answers should
+be yes.</li>
+<li>Effort: how much effort is this change piling on top of other people&#39;s
+workload? Ideally less than 10%. In engineering it&#39;s often a fixed or
+negative cost. Migration are typically done once, and process changes are
+usually there to make things faster and more efficient. Not slower!</li>
+</ul>
+<h2 id="you-made-it-">You made it!</h2>
+<p>Thanks for reading all the way until the end. I found the experiment of reading
+a business-y book quite entertaining. Half of this book was, let&#39;s be real,
+completely useless and felt over-the-top, vague, full of jargon and
+non-applicable to engineering. However, the articles I highlighted resonated
+somewhat and gave me some confirmation that what I perceived to be true
+intuitively in engineering is true in business and everywhere else. The first
+article is probably the most useful because it lays a framework to think about
+change initiatives that is relevant to engineers.</p>
+
+</div>
+
+<link href="/css/shCoreMidnight.css" rel="stylesheet" type="text/css" />
+<script src="/js/shCore.js" type="text/javascript"></script>
+<script src="/js/shAutoloader.js" type="text/javascript"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+        'js jscript javascript  /js/shBrushJScript.js',
+        'python                 /js/shBrushPython.js',
+        'plain                  /js/shBrushPlain.js',
+        'css                    /js/shBrushCss.js'
+    );
+    SyntaxHighlighter.all();
+</script>
+        </section>
+
+        <footer>
+          <h1>The End.</h1>
+          <p>
+            &mdash; &#10084; &mdash;
+            <br />
+            This is an open website.
+            <a rel="noopener" class="view-source" href="https://github.com/ArnaudBrousseau/arnaudbrousseau.com" target="_blank" title="Feeling brave enough?">
+              Check out its source.
+            </a>
+          </p>
+        </footer>
+
+        <!-- Google analytics - asynchronous mode -->
+        <script>
+          var _gaq = [['_setAccount', 'UA-19545721-1'], ['_trackPageview']];
+          (function(d, t) {
+            var g = d.createElement(t),
+                s = d.getElementsByTagName(t)[0];
+            g.async = true;
+            g.src = 'https://www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g, s);
+          })(document, 'script');
+        </script>
+    </body>
+</html>
